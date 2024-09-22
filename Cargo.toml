@@ -1,0 +1,17 @@
+[package]
+name = "terminal-color"
+version = "0.1.0"
+edition = "2021"
+
+include = [
+    "src/terminalcolor.rs",
+    "Cargo.toml"
+]
+
+[dependencies]
+lazy_static = "1.4.0"
+
+[lib]
+path = "src/libtermcolor.rs"
+crate-type = ["lib"]
+name = "libtermcolor"
